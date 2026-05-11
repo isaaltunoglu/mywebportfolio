@@ -3,15 +3,5 @@
 !styles.css
 !script.js
 !.gitignore
-!myfoto.jpg
-!görsel1.jpeg
-!hicazyeni.png
-!figma.jpeg
-!git_github.jpeg
-!godili.jpeg
-!sibergüvenligegiris.jpeg
-!gönüllühgençkampliderligi.jpeg
-!KURUMSAL_GSB_logo_BB-04.png
-!bilgi-teknolojileri-ve-iletisim-kurumu-logo-png_seeklogo-194838.png
-!googleakademi.png
-!karabüküniversitesilogo.png
+!assets/
+!assets/**
