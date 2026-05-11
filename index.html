@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="İsa Altunoğlu - AIoT Engineer. Gömülü sistemler, edge AI, IoT, CANbus telemetri ve sürdürülebilir tarım otomasyonu odaklı kişisel portfolyo."
+    />
+    <title>İsa Altunoğlu | AIoT Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Ana sayfa">
+        <span>İA</span>
+      </a>
+      <nav class="nav" aria-label="Ana gezinme">
+        <a href="#about">Profil</a>
+        <a href="#projects">Projeler</a>
+        <a href="#experience">Deneyim</a>
+        <a href="#skills">Yetkinlikler</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <canvas id="signalCanvas" aria-hidden="true"></canvas>
+        <div class="hero-inner">
+          <h1>İsa Altunoğlu</h1>
+          <p class="hero-title">AIoT Engineer</p>
+          <p class="hero-subtitle">Computer Engineering Student</p>
+          <p class="hero-copy">
+            Gömülü sistemler, gerçek zamanlı haberleşme ve yapay zekayı fiziksel sistemlere
+            bağlayan uçtan uca mühendislik çözümleri geliştiriyorum.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Projeleri Gör</a>
+            <a class="button secondary" href="isaaltunoglucvC.pdf" target="_blank" rel="noreferrer">CV</a>
+          </div>
+          <div class="hero-tags" aria-label="Odak alanları">
+            <span>Edge AI</span>
+            <span>IoT</span>
+            <span>Embedded Systems</span>
+            <span>CANbus</span>
+            <span>Go WebSocket</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band" id="about">
+        <div class="section-label">Profil</div>
+        <div class="intro-grid">
+          <div>
+            <h2>AI, IoT ve gömülü sistemleri aynı ürün akışında birleştiriyorum.</h2>
+          </div>
+          <div class="intro-copy">
+            <p>
+              Karabük Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Hicaz Hyperloop
+              takımında yazılım ve haberleşme biriminde takım liderliği yapıyor, CANbus,
+              telemetri, pod ve yer istasyonu yazılımları üzerine çalışıyorum.
+            </p>
+            <p>
+              TÜBİTAK 2209-A ve Karabük BAP destekli otonom hidroponik tarım projesinde
+              Raspberry Pi, Arduino, sensör kontrolü, Firebase, görüntü işleme ve kendi veri
+              setimle eğitilen AI modelini bir araya getirdim.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section focus-section" aria-label="Konumlandırma">
+        <div class="focus-card">
+          <span>Öne çıktığım alan</span>
+          <h2>Edge AI + IoT + kontrol algoritmaları</h2>
+          <p>
+            Sektörde beni ayrıştıran taraf, yalnızca web ya da yalnızca model geliştirme
+            değil; sensörden gelen veriyi anlamlandırıp donanımı güvenli biçimde kontrol eden
+            AIoT mimarileri kurabilmem.
+          </p>
+        </div>
+        <div class="focus-list">
+          <article>
+            <h3>Gerçek zamanlı veri</h3>
+            <p>CANbus, UART, sensör okuma, telemetri ve düşük gecikmeli veri akışı.</p>
+          </article>
+          <article>
+            <h3>Fiziksel sistem kontrolü</h3>
+            <p>Pompa, röle, LED, pH/EC dozajlama ve fail-safe karar döngüleri.</p>
+          </article>
+          <article>
+            <h3>AI entegrasyonu</h3>
+            <p>EfficientNet-B0, görüntü işleme, veri seti hazırlama ve edge uyumlu modeller.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Projeler</div>
+            <h2>Ürünleşebilir mühendislik çalışmaları</h2>
+          </div>
+          <a class="text-link" href="https://github.com/isaaltunoglu" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-content">
+              <span class="tag">TÜBİTAK 2209-A / Karabük BAP</span>
+              <h3>Otonom NFT Tabanlı Topraksız Tarım Sistemi</h3>
+              <p>
+                Raspberry Pi ve Arduino Mega arasında UART haberleşmesi, sensör-pompa kontrolü,
+                Firebase destekli izleme, pH/EC optimizasyonu ve bitki hastalık tespiti için
+                görüntü işleme modeli geliştirildi.
+              </p>
+              <ul class="clean-list">
+                <li>EfficientNet-B0 modeliyle test doğruluğu: %85.32</li>
+                <li>53 manuel ölçümde otonom kontrol doğruluğu: %98.4</li>
+                <li>pH, EC, sıcaklık, nem, ışık ve dozajlama verileriyle kapalı döngü kontrol</li>
+              </ul>
+              <p>
+                Projenin akademik çıktıları için aktif olarak makale ve rapor yazımı üzerinde
+                çalışıyorum.
+              </p>
+              <div class="card-actions">
+                <a
+                  href="https://unis.karabuk.edu.tr/proje-detay/2_Dp8oE0_64/goruntu-isleme-destekli-topraksiz-tarim-sisteminde-bitkilerin-verimliliginin-ve-hastalik-durumlarinin-incelenmesi"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Proje kaydı
+                </a>
+              </div>
+              <img
+                class="project-photo"
+                src="görsel1.jpeg"
+                alt="Görüntü işleme destekli topraksız tarım sistemi ve proje ekibi"
+              />
+            </div>
+          </article>
+
+          <article class="project-card media-card">
+            <img src="hicazyeni.png" alt="Hicaz Hyperloop takım logosu" />
+            <div class="project-content">
+              <span class="tag">Teknofest / Haberleşme</span>
+              <h3>Hicaz Hyperloop Telemetri ve CANbus</h3>
+              <p>
+                Pod ve yer sistemi arasında güvenilir veri akışı için CANbus protokolü,
+                Raspberry Pi üzerinde telemetri verilerinin Go ile işlenmesi ve WebSocket
+                üzerinden canlı haberleşme mimarisi üzerine çalışıyorum.
+              </p>
+              <p>
+                Yazılım ve haberleşme tarafının yanında 3D tasarım süreçleriyle de ilgileniyorum.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <span class="tag">Qt / C++</span>
+              <h3>Drone Kontrol İstasyonu Yazılımı</h3>
+              <p>
+                QGroundControl üzerinde C++ eklentileri ve özel UI modülleri geliştirerek düşük
+                gecikmeli veri akışına uygun kontrol istasyonu deneyimi tasarlandı.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-content">
+              <span class="tag">Godot</span>
+              <h3>Game Jam 2D Oyunları</h3>
+              <p>
+                Godot Engine ve ekip çalışmasıyla kısa sürede oynanabilir prototipler geliştirildi;
+                oyun mekaniği, UI ve üretim disiplini pratiği kazanıldı.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="experience">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Deneyim</div>
+            <h2>Yeniden eskiye deneyim akışı</h2>
+          </div>
+          <a class="text-link" href="myexperienceandcertificate.pdf" target="_blank" rel="noreferrer">Sertifikalar</a>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <span>May 2026 - Devam ediyor</span>
+            <h3>Gönüllü Genç Kamp Lideri</h3>
+            <p>T.C. Gençlik ve Spor Bakanlığı bünyesinde genç grupların koordinasyonu ve liderliği.</p>
+          </article>
+          <article>
+            <span>Kas 2025 - Devam ediyor</span>
+            <h3>Yazılım ve Haberleşme Takım Lideri</h3>
+            <p>Hicaz Hyperloop takımında CANbus, telemetri, C++ GUI ve haberleşme mimarisi.</p>
+          </article>
+          <article>
+            <span>Şub 2026 - Devam ediyor</span>
+            <h3>Öğrenci - Savunma Sanayii Akademi</h3>
+            <p>Uzaktan yürütülen akademi programında savunma teknolojileri ve mühendislik odağı.</p>
+          </article>
+          <article>
+            <span>Eki 2025 - Nis 2026</span>
+            <h3>Program Koordinatörü - GEPTEK</h3>
+            <p>Teknik etkinlikler, dijital iletişim akışı ve öğrenci topluluğu koordinasyonu.</p>
+          </article>
+          <article>
+            <span>Ara 2024 - Eki 2025</span>
+            <h3>AI Trainer - Outlier</h3>
+            <p>Python kod çıktıları, mantık hataları, performans iyileştirme ve TR-EN değerlendirme.</p>
+          </article>
+          <article>
+            <span>Şub 2025 - Haz 2025</span>
+            <h3>Backend Developer - Karabük Demir Çelik Enstitüsü</h3>
+            <p>Go ile REST API, işçi operasyon takip otomasyonu, Postman ve veritabanı entegrasyonu.</p>
+          </article>
+          <article>
+            <span>Haz 2023 - Haz 2024</span>
+            <h3>Stajyer - Oyun ve Uygulama Akademisi</h3>
+            <p>Flutter, mobil uygulama geliştirme, teknoloji girişimciliği ve app jam deneyimi.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-label">Yetkinlikler</div>
+        <h2>AIoT ürünleri için gerekli teknoloji yığını</h2>
+        <div class="tech-icons" aria-label="Bildiğim teknolojiler ve kullanım alanlarım">
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" loading="lazy" />
+            <h3>C++</h3>
+            <p>Hicaz Hyperloop telemetri arayüzleri, Qt tabanlı yazılımlar ve drone kontrol istasyonu.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy" />
+            <h3>Python</h3>
+            <p>Yapay zeka eğitimi, görüntü işleme, veri hazırlama ve Raspberry Pi servisleri.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" loading="lazy" />
+            <h3>C</h3>
+            <p>Gömülü sistem mantığı, mikrodenetleyici temelleri ve donanıma yakın algoritmalar.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" alt="Go" loading="lazy" />
+            <h3>Go</h3>
+            <p>KARDEMIR backend otomasyonu ve Hicaz'da Raspberry Pi telemetri-WebSocket hattı.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy" />
+            <h3>JavaScript</h3>
+            <p>Web arayüzleri, etkileşimli portfolyo bölümleri ve istemci tarafı kontrol akışları.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" loading="lazy" />
+            <h3>TypeScript</h3>
+            <p>Next.js tabanlı izleme panelleri ve daha güvenli frontend veri modelleri.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" loading="lazy" />
+            <h3>HTML5</h3>
+            <p>Kişisel portfolyo, proje sunum sayfaları ve web arayüzlerinin iskeleti.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" loading="lazy" />
+            <h3>CSS3</h3>
+            <p>Responsive portfolyo tasarımı, kart sistemleri ve teknik arayüz düzenleri.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" loading="lazy" />
+            <h3>Java</h3>
+            <p>Bilgisayar mühendisliği dersleri ve nesne yönelimli programlama pratiği.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" loading="lazy" />
+            <h3>Dart</h3>
+            <p>Flutter ile mobil uygulama geliştirme sürecinde kullandığım ana dil.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" loading="lazy" />
+            <h3>Flutter</h3>
+            <p>Oyun ve Uygulama Akademisi döneminde mobil uygulama prototipleri.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" loading="lazy" />
+            <h3>Next.js</h3>
+            <p>Hidroponik sistem izleme arayüzü ve Firebase bağlantılı kontrol panelleri.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" loading="lazy" />
+            <h3>React</h3>
+            <p>Canlı veri izleme ekranları ve bileşen tabanlı kullanıcı arayüzleri.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" loading="lazy" />
+            <h3>Firebase</h3>
+            <p>Hidroponik sistemde canlı veri, konfigürasyon ve uzaktan izleme altyapısı.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" loading="lazy" />
+            <h3>Docker</h3>
+            <p>Backend servisleri ve geliştirme ortamlarını taşınabilir hale getirme çalışmaları.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" alt="Raspberry Pi" loading="lazy" />
+            <h3>Raspberry Pi</h3>
+            <p>Hidroponik sistem veri köprüsü ve Hicaz telemetri aktarım bilgisayarı.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino" loading="lazy" />
+            <h3>Arduino</h3>
+            <p>Sensör okuma, pompa kontrolü, röle yönetimi ve pH/EC karar döngüleri.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/qt/qt-original.svg" alt="Qt" loading="lazy" />
+            <h3>Qt</h3>
+            <p>C++ tabanlı GUI geliştirme, QGroundControl özelleştirme ve kontrol ekranları.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" loading="lazy" />
+            <h3>Linux</h3>
+            <p>Raspberry Pi servisleri, geliştirme ortamları ve sistem seviyesinde çalışma.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" loading="lazy" />
+            <h3>Git & GitHub</h3>
+            <p>Projelerin versiyon kontrolü, portfolyo yayını ve ekip içi kod takibi.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender" loading="lazy" />
+            <h3>Blender</h3>
+            <p>3D modelleme, teknik görselleştirme ve Hicaz tarafındaki tasarım ilgim.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" loading="lazy" />
+            <h3>Figma</h3>
+            <p>UI/UX denemeleri, arayüz planlama ve teknik sunum tasarımları.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" alt="Godot" loading="lazy" />
+            <h3>Godot</h3>
+            <p>Game Jam süreçlerinde 2D oyun prototipleri ve oyun mekaniği geliştirme.</p>
+          </article>
+          <article>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV" loading="lazy" />
+            <h3>OpenCV</h3>
+            <p>Bitki görüntülerinin işlenmesi, sınıflandırmaya hazırlık ve görsel analiz akışları.</p>
+          </article>
+        </div>
+        <div class="skills-grid">
+          <div>
+            <h3>Diller</h3>
+            <p>C, C++, Python, Go, Dart, Java, JavaScript, TypeScript, HTML, CSS</p>
+          </div>
+          <div>
+            <h3>AI & Veri</h3>
+            <p>PyTorch, TensorFlow, Keras, LSTM, EfficientNet, OpenCV, Pandas, Kaggle</p>
+          </div>
+          <div>
+            <h3>Gömülü & IoT</h3>
+            <p>ESP32, Raspberry Pi, Arduino Mega, CANbus, UART/SPI, sensör ve pompa kontrolü</p>
+          </div>
+          <div>
+            <h3>Web & Backend</h3>
+            <p>Next.js, React, Firebase, REST API, Docker, Postman, phpMyAdmin</p>
+          </div>
+          <div>
+            <h3>Araçlar</h3>
+            <p>Git, GitHub, Linux, Qt Creator, QGroundControl, Figma, Blender, Godot</p>
+          </div>
+          <div>
+            <h3>Diller & Eğitim</h3>
+            <p>Türkçe ana dil, İngilizce B2, Karabük Üniversitesi Computer Engineering</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div>
+          <div class="section-label">İletişim</div>
+          <h2>AIoT, gömülü sistem ve gerçek zamanlı veri projeleri için ulaşabilirsiniz.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:52isaaltunoglu@gmail.com">52isaaltunoglu@gmail.com</a>
+          <a href="https://www.linkedin.com/in/isa-altunoglu" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/isaaltunoglu" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.instagram.com/isaaltunogluu/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 İsa Altunoğlu</span>
+      <a href="#top">Yukarı dön</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
