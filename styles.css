@@ -520,15 +520,28 @@ h3 {
   border-radius: 8px;
 }
 
-.tech-icons img {
+.tech-icons img,
+.custom-tech-icon {
   grid-row: 1 / span 2;
   width: 48px;
   height: 48px;
   padding: 7px;
-  object-fit: contain;
   background: rgba(255, 255, 255, 0.82);
   border: 1px solid rgba(17, 20, 24, 0.1);
   border-radius: 8px;
+}
+
+.tech-icons img {
+  object-fit: contain;
+}
+
+.custom-tech-icon {
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  background: linear-gradient(135deg, var(--ink), var(--blue));
+  font-size: 0.82rem;
+  font-weight: 900;
 }
 
 .tech-icons h3 {
@@ -693,7 +706,8 @@ h3 {
     padding: 14px;
   }
 
-  .tech-icons img {
+  .tech-icons img,
+  .custom-tech-icon {
     width: 40px;
     height: 40px;
     padding: 6px;
